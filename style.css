@@ -1,0 +1,156 @@
+
+/* Red Hat Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+  font-family: "Red Hat Display", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(assets/pattern-background-desktop.svg) no-repeat;
+  background-size: 100%;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.container .main-image {
+  border-radius: 20px 20px 0 0;
+  height: 200px;
+}
+.card {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+
+}
+.card h1 {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+}
+.card .description {
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+  text-align: center;
+  line-height: 25px;
+}
+.plan {
+  padding: 20px 20px;
+  background-color:   hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.plan .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left .music-icon {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.left .text {
+  font-size: 16px;
+  font-weight: 900;
+  color: black;
+  max-width: 150px;
+  line-height: 25px;
+}
+h2 span {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+.right {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-size: 13px;
+  font-weight: 900;
+}
+.right:hover {
+  color: hsla(245, 75%, 52%, 0.5);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 900;
+}
+.payment {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.payment button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;;
+  padding: 12px 0px;
+  box-shadow: 0px 20px 18px hsla(245, 75%, 52%, 0.15);
+  margin-bottom: 20px;
+  transition: all 0.3s ease; 
+}
+.payment button:hover {
+  background-color: hsla(245, 75%, 52%, 0.8);
+}
+.payment a {
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  text-align: center;
+}
+.payment a:hover {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+@media (max-width:375px) {
+  body {
+    background: url(assets/pattern-background-mobile.svg) no-repeat;
+    background-size: 130%;
+    background-color: hsl(225, 100%, 94%);
+  }
+  .container {
+    max-width: 350px;
+  }
+  .card {
+    padding: 25px;
+  }
+  .payment button {
+    font-size: 16px;
+  }
+  .payment a {
+    font-size: 16px;
+  }
+
+
+}
